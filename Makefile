@@ -6,13 +6,14 @@
 #    By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/10 10:42:23 by heahn             #+#    #+#              #
-#    Updated: 2021/10/14 02:17:50 by heahn            ###   ########.fr        #
+#    Updated: 2021/10/14 05:59:25 by heahn            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = ft_printf.c ft_print_type.c ft_utils.c
 
 OBJS = $(SRCS:.c=.o)
+
 
 NAME = libftprintf.a
 
