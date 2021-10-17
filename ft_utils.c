@@ -6,7 +6,7 @@
 /*   By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 07:33:09 by heahn             #+#    #+#             */
-/*   Updated: 2021/10/15 03:49:28 by heahn            ###   ########.fr       */
+/*   Updated: 2021/10/18 02:17:00 by heahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,26 +20,6 @@ int	ft_strlen(char *str)
 	while (str[i])
 		i++;
 	return (i);
-}
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	size_t	src_len;
-	size_t	i;
-
-	if (dst == NULL && src == NULL)
-		return (0);
-	src_len = ft_strlen((char *)src);
-	if (dstsize == 0)
-		return (src_len);
-	i = 0;
-	while (src[i] != '\0' && i < (dstsize - 1))
-	{
-		dst[i] = src[i];
-		i++;
-	}
-	dst[i] = '\0';
-	return (src_len);
 }
 
 char	*ft_strjoin(char *s1, char *s2)

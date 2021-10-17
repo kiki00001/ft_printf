@@ -6,7 +6,7 @@
 /*   By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 07:33:09 by heahn             #+#    #+#             */
-/*   Updated: 2021/10/15 04:07:08 by heahn            ###   ########.fr       */
+/*   Updated: 2021/10/18 02:01:48 by heahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_itoa(int n)
 
 	i = 0;
 	if (n == -2147483648)
-		return (ft_strdup("2147483648"));
+		return (ft_strdup("-2147483648"));
 	len = ft_len(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (str == 0)

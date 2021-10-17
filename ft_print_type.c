@@ -6,7 +6,7 @@
 /*   By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/12 06:35:34 by heahn             #+#    #+#             */
-/*   Updated: 2021/10/14 22:50:17 by heahn            ###   ########.fr       */
+/*   Updated: 2021/10/18 02:19:36 by heahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +41,14 @@ int	ft_type_p(unsigned long p, char *base)
 
 int	ft_type_id(int d)
 {
+	int		rtn;
 	char	*str;
-	int		len;
 
-	len = 0;
-	if (d < 0)
-	{
-		str = ft_itoa(-(long)d);
-		len += write(1, "-", sizeof(char));
-	}
-	else
-		str = ft_itoa(d);
-	len += write(1, str, ft_strlen(str) * sizeof(char));
+	rtn = 0;
+	str = ft_itoa(d);
+	rtn += write(1, str, ft_strlen(str) * sizeof(char));
 	free(str);
-	return (len);
+	return (rtn);
 }
 
 int	ft_type_ux(unsigned int x, char *base)
@@ -62,6 +56,7 @@ int	ft_type_ux(unsigned int x, char *base)
 	int		rtn;
 	char	*str;
 
+	rtn = 0;
 	str = ft_htoa(x, base);
 	rtn = write(1, str, ft_strlen(str) * sizeof(char));
 	free(str);

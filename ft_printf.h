@@ -6,7 +6,7 @@
 /*   By: heahn <heahn@student.42seoul.kr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 16:40:24 by heahn             #+#    #+#             */
-/*   Updated: 2021/10/14 22:41:03 by heahn            ###   ########.fr       */
+/*   Updated: 2021/10/18 02:17:26 by heahn            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ int		ft_type_p(unsigned long p, char *base);
 int		ft_type_id(int d);
 int		ft_type_ux(unsigned int x, char *base);
 int		ft_strlen(char *str);
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strjoin(char *s1, char *s2);
 char	*ft_strdup(char *s1);
 size_t	ft_len(int n);
