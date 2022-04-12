@@ -1,6 +1,6 @@
-# ft_printf
+# 💡 ft_printf
 
-## 💡 About the project 
+## About the project 
 > 이 프로젝트는 'printf' 함수를 똑같이 구현한 것 입니다.
 
 This project is pretty straight forward. You will recode printf. Hopefully you will be able to reuse it in future projects without the fear of being flagged as a cheater.
